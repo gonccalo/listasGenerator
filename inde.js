@@ -54,7 +54,11 @@ $(document).ready(function() {
 	$('#primeiro').css('background-image', 'url(' + (Math.floor(Math.random() * 8)+1) + '.jpg)');
 	$('#primeiro').css('background-repeat', 'no-repeat');
 	$('#primeiro').css('background-size', 'cover');
-	$('#primeiro').css('box-shadow', 'inset 0 0 0 1000px rgba(' + (Math.floor(Math.random() * 255)+1) + ',' + (Math.floor(Math.random() * 255)+1) +',' + (Math.floor(Math.random() * 255)+1) +',.5)');
+	var r = (Math.floor(Math.random() * 255)+1);
+	var g =(Math.floor(Math.random() * 255)+1);
+	var b = (Math.floor(Math.random() * 255)+1);
+	$('#primeiro').css('box-shadow', 'inset 0 0 0 1000px rgba(' + r + ',' + g +',' + b +',.5)');
     var frase = first[Math.floor(Math.random() * first.length)] + " " + second[Math.floor(Math.random() * second.length)] + " " + third[Math.floor(Math.random() * third.length)] + " " + fourth[Math.floor(Math.random() * fourth.length)];
     $('#tretaLonga').text(frase);
+    $('segundo').css('background-color', 'rgba(' + r + ',' + g +',' + b +',.5)');
 });
