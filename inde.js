@@ -7,7 +7,7 @@ var third = ["obriga à análise", "cumpre um papel essencial na formulação", 
 var fourth = ["das nossas opções de desenvolvimento futuro.", "das nossas metas financeiras e administrativas.", "das atitudes e das atribuições dos responsáveis.", "das novas proposições.", "das opções básicas para o sucesso do programa.", "da nossa política de gestão pessoal.", "das condições apropriadas para os projectos.", "dos índices pretendidos.", "das novas formas de acção.", "das modalidades de participação geral"];
 
 //var filtros = "grayscale(100%);", "blur(5px);", "invert(100%)", "hue-rotate(180deg)", "sepia(80%)"
-
+var tope = ["Ser UA", "Uma Academia", "Academia em pratica", "Um Rumo Melhor", "Mudança Consciente", "Navegar Além", "Academia grande, outra vez"];
 $(document).ready(function() {
 	/*
     $('#pagepiling').pagepiling({
@@ -50,6 +50,7 @@ $(document).ready(function() {
 	});
 	var possible = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 	$('#nomeLista').text("Lista " + possible[Math.floor(Math.random() * possible.length)]);
+	$('#tretaGrande').text(tope[Math.floor(Math.random() * tope.length)]);
 	$('#primeiro').css('background-image', 'url(' + (Math.floor(Math.random() * 8)+1) + '.jpg)');
 	$('#primeiro').css('background-repeat', 'no-repeat');
 	$('#primeiro').css('background-size', 'cover');
