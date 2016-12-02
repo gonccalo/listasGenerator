@@ -21,7 +21,7 @@ $(document).ready(function() {
 	var slogan = tope[Math.floor(Math.random() * tope.length)];
 	$('#tretaGrande').text(slogan);
 	$('#nomeLista').text("Lista " + slogan[0]);
-	$('#primeiro').css('background-image', 'url(' + (Math.floor(Math.random() * 8)+1) + '.jpg)');
+	$('#primeiro').css('background-image', 'url(' + (Math.floor(Math.random() * 14)+1) + '.jpg)');
 	$('#primeiro').css('background-repeat', 'no-repeat');
 	$('#primeiro').css('background-size', 'cover');
 	var r = (Math.floor(Math.random() * 255)+1);
