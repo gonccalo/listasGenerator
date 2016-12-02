@@ -7,7 +7,7 @@ var third = ["obriga à análise", "cumpre um papel essencial na formulação", 
 var fourth = ["das nossas opções de desenvolvimento futuro.", "das nossas metas financeiras e administrativas.", "das atitudes e das atribuições dos responsáveis.", "das novas proposições.", "das opções básicas para o sucesso do programa.", "da nossa política de gestão pessoal.", "das condições apropriadas para os projectos.", "dos índices pretendidos.", "das novas formas de acção.", "das modalidades de participação geral"];
 
 //var filtros = "grayscale(100%);", "blur(5px);", "invert(100%)", "hue-rotate(180deg)", "sepia(80%)"
-var tope = ["Ser UA", "Uma Academia", "Academia em pratica", "Um Rumo Melhor", "Mudança Consciente", "Navegar Além", "Academia grande, outra vez"];
+var tope = ["Ser UA", "Uma Academia", "Academia em pratica", "Orgulhosamente Academia", "Um Rumo Melhor", "Mudança Consciente", "Navegar Além", "Academia grande, outra vez", "Cooperar para aprender", "Está na hora!", "Voz do estudante", "Querer Mais", "Mais por ti", "Abraçar Aveiro", "Ser Aveiro"];
 $(document).ready(function() {
 	
     	$('#pagepiling').pagepiling(
