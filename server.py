@@ -17,7 +17,7 @@ class Pessoa(object):
 
 class Lista(object):
     slogans = ["Ser UA", "Uma Academia", "Academia em pratica", "Orgulhosamente Academia", "Um Rumo Melhor", "Mudança Consciente", "Navegar Além", "Academia grande, outra vez", "Cooperar para aprender", "Está na hora!", "Voz do estudante", "Querer Mais", "Mais por ti", "Abraçar Aveiro", "Ser Aveiro"]
-    posicoes = ["", ""]
+    nucleos = ["", ""]
     posicoes = ["Coordenador", "Responsável Finaceiro", "Vogal de Pedagogia", "Vogal de Cultura", "Vogal de Desporto", "Vogal de Comunicação", "Presidente de Mesa", "1º Secretário", "2º Secretário"]
     @cherrypy.expose
     def index(self, name):
