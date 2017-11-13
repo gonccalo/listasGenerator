@@ -18,18 +18,19 @@ class Pessoa(object):
 class Lista(object):
     slogans = ["Ser UA", "Uma Academia", "Academia em pratica", "Orgulhosamente Academia", "Um Rumo Melhor", "Mudança Consciente", "Navegar Além", "Academia grande, outra vez", "Cooperar para aprender", "Está na hora!", "Voz do estudante", "Querer Mais", "Mais por ti", "Abraçar Aveiro", "Ser Aveiro"]
     posicoes = ["", ""]
-    nucleos = []
+    posicoes = ["Coordenador", "Responsável Finaceiro", "Vogal de Pedagogia", "Vogal de Cultura", "Vogal de Desporto", "Vogal de Comunicação", "Presidente de Mesa", "1º Secretário", "2º Secretário"]
     @cherrypy.expose
     def index(self, name):
         descricao = random.choice(self.slogans)
         nome_lista = "Lista " + descricao[0]
+        pos = random.choice(self.posicoes)
         img_path = self.get_image(nome_lista, descricao, name)
         html_s = '<!DOCTYPE html><html lang="en"><head>\
             <meta charset="utf-8">\
             <meta property="og:url" content="http://www.nytimes.com/2015/02/19/arts/international/when-great-minds-dont-think-alike.html" />\
             <meta property="og:type" content="article" />\
             <meta property="og:title" content="' + nome_lista + '" />\
-            <meta property="og:description" content="' + descricao + '" />\
+            <meta property="og:description" content=" És o ' + pos + '" />\
             <meta property="og:image" content="' + cherrypy.request.base + '/' + img_path + '" />\
         </head><body>\
             <img src="' + cherrypy.request.base + '/' + img_path + '"></body></html>'
